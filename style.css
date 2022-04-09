@@ -337,19 +337,18 @@ footer p{
 
 @media (max-width:400px) {
   .sub-title {
-   
-   
-    font-size: 1.2rem;
+   font-size: 1.2rem;
   }
 
   .about-package{
-   
-    font-size: 16px;
+   font-size: 16px;
   }
 
-  footer p{
+  ul {
+  font-size: 20px;
+   }
   
-    font-size: 1.2rem;
-   
-  }
+  footer p{
+  font-size: 1.2rem;
+   }
 }
