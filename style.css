@@ -10,6 +10,8 @@ a {
   font-family: 'Concert One', cursive;
 }
 
+
+
 h2{
 font-size: 30px;
 margin: 10px 0;
@@ -17,7 +19,7 @@ margin: 10px 0;
 
 h3{
   font-size: 25px;
-  margin-bottom: 30px;
+
 }
 
 p{
@@ -33,7 +35,7 @@ p{
   font-family: 'Concert One', cursive;
   color: rgb(182, 62, 182);
   font-size: 5rem;
-  text-shadow: 2px 3px 4px #313030;
+  text-shadow: 2px 4px 4px #1d1c1c;
 }
 
 span {
@@ -49,11 +51,13 @@ span {
   font-size: 2rem;
 }
 
+
 .price {
-margin: 20px 0;
+margin: 25px 0;
 font-family: 'Concert One', cursive;
 color: rgb(88, 4, 88);
 font-size: 3rem;
+text-shadow: 2px 5px 4px #fffdfd;
 }
 
 body {
@@ -102,7 +106,7 @@ body {
   border-radius: 20px;
   margin: 10px 0;
  
-  text-align: center;
+  
 }
 
 .website-packages {
@@ -115,14 +119,17 @@ body {
   border-radius: 20px;
   margin: 20px 0;
   min-height: 80vh;
-  
+  margin-bottom: 30px;
 }
 
 
 
 .package-description {
   width: 100%;
+  
 }
+
+
 
 .choose-your-plan {
   width: 100%;
@@ -141,12 +148,14 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   
 }
 
 .about-package{
   font-family: 'Concert One', cursive;
   margin: 0 10px;
+  font-size: 18px;
 }
 
 
@@ -157,9 +166,25 @@ body {
   display: flex;
   border-radius: 20px;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
 }
 
+.middle {
+  width: 80%;
+  
+}
+
+ul {
+  margin-top: 50px;
+  list-style:square ;
+  color: rgb(117, 9, 117);
+  text-shadow: 2px 3px 4px #313030;
+  font-size: 30px;
+  font-weight: bold;
+}
 
 .third {
   width: 100%;
@@ -187,9 +212,22 @@ body {
 
 .text-box {
 width: 60%;
+text-align: center;
 }
 
+footer {
+  width: 90%;
+  padding: 30px 0;
+  text-align: center;
+  
+  color:  rgb(255, 255, 255);
+}
 
+footer p{
+  
+  font-size: 2rem;
+ 
+}
 
 @media (max-width:800px) {
   .choose-your-plan {
@@ -234,7 +272,7 @@ width: 60%;
   a {
 
     font-size: 1.5rem;
-  
+    text-shadow: 2px 3px 4px #dfdada;
   }
   
   h2{
@@ -244,7 +282,7 @@ width: 60%;
   
   h3{
     font-size: 20px;
-    margin-bottom: 30px;
+   
   }
   
   p{
@@ -255,6 +293,7 @@ width: 60%;
   .title {
    
     font-size: 3rem;
+    text-shadow: 2px 3px 4px #313030;
   }
   
   
@@ -266,7 +305,7 @@ width: 60%;
   }
   
   .price {
-  margin: 20px 10px;
+ 
   
   font-size: 2rem;
   }
@@ -301,5 +340,16 @@ width: 60%;
    
    
     font-size: 1.2rem;
+  }
+
+  .about-package{
+   
+    font-size: 16px;
+  }
+
+  footer p{
+  
+    font-size: 1.2rem;
+   
   }
 }
