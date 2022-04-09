@@ -33,6 +33,7 @@ p{
   font-family: 'Concert One', cursive;
   color: rgb(182, 62, 182);
   font-size: 5rem;
+  text-shadow: 2px 3px 4px #313030;
 }
 
 span {
