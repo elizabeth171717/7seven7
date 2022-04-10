@@ -138,8 +138,10 @@
             method="post"
             data-netlify="true"
             onSubmit="submit"
+            data-netlify-honeypot="bot-field"
             class="row g-3"
           >
+            <input class="d-none" name="bot-field">
             <div class="col-md-6">
               <label form="firstName" class="form-label">First Name</label>
               <input
