@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>7seven7</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <!-- font-awesome -->
     <link
       rel="stylesheet"
@@ -90,8 +96,8 @@
               </div>
             </div>
           </div>
-         
- <!-- second package starts-->
+
+          <!-- second package starts-->
 
           <div class="package-container second">
             <div class="package-description middle">
@@ -107,7 +113,7 @@
               </ul>
             </div>
           </div>
-          
+
           <!-- third package starts-->
           <div class="package-container third">
             <div class="package-description last">
@@ -123,6 +129,76 @@
         </div>
       </div>
 
+      <!--FORM CONTAINER-->
+      <div class="contact-form">
+        <h1>Contact Us!</h1>
+        <div class="form-conatiner">
+          <form
+            name="contact"
+            method="post"
+            data-netlify="true"
+            onSubmit="submit"
+            class="row g-3"
+          >
+            <div class="col-md-6">
+              <label form="firstName" class="form-label">First Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="firstName"
+                name="name"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <label form="lastName" class="form-label">Last Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lastName"
+                name="lastname"
+                required
+              />
+            </div>
+            <div class="col-md-8">
+              <label form="emailInfo" class="form-lablel">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="emailInfo"
+                name="email"
+                required
+              />
+            </div>
+            <div class="col-md-4">
+              <label form="phoneNumber" class="form-lablel">Phone Number</label>
+              <input
+                type="text"
+                class="form-control"
+                id="phoneNumber"
+                name="phone"
+                placeholder="+1 (415) 867-5309"
+              />
+            </div>
+            <div class="col-md-12">
+              <label for="comments" class="form-label"
+                >Tell us more about your Business</label
+              >
+              <textarea
+                class="form-control"
+                id="comments"
+                row="3"
+                name="comment"
+                required
+              ></textarea>
+            </div>
+            <div class="col-md-12">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
       <!-- footer-->
 
       <footer class="lighter">
@@ -132,37 +208,39 @@
           .All rights reserved
         </p>
       </footer>
-      
+
       <!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
+      <div id="fb-root"></div>
 
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
+      <!-- Your Chat Plugin code -->
+      <div id="fb-customer-chat" class="fb-customerchat"></div>
 
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "1533435256972299");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
+      <script>
+        var chatbox = document.getElementById("fb-customer-chat");
+        chatbox.setAttribute("page_id", "1533435256972299");
+        chatbox.setAttribute("attribution", "biz_inbox");
+      </script>
 
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v13.0'
-        });
-      };
+      <!-- Your SDK code -->
+      <script>
+        window.fbAsyncInit = function () {
+          FB.init({
+            xfbml: true,
+            version: "v13.0",
+          });
+        };
 
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
+        (function (d, s, id) {
+          var js,
+            fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s);
+          js.id = id;
+          js.src =
+            "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        })(document, "script", "facebook-jssdk");
+      </script>
     </div>
     <!-- javascript-->
     <script src="app.js"></script>
