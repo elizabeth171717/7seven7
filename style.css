@@ -352,3 +352,29 @@ footer p{
   font-size: 1.2rem;
    }
 }
+/**************************************************CONTACT FORM******************************************************************/
+
+.contact-form {
+  width: 60%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin: 10px 0;
+  background-color: #ffffff;
+  
+ }
+
+ .form-conatiner {
+   border-radius: 5px;
+   width: 80%;
+   
+ }
+
+ @media (max-width:500px) {
+  .contact-form {
+    width: 90%;
+    }
+}
